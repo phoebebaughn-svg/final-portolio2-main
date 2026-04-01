@@ -1,0 +1,117 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background: linear-gradient(180deg, #f8fff9, #fef6fb);
+  color: #444;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: linear-gradient(135deg, #ffdce8, #d8f5dc);
+  padding: 20px 30px;
+  border-bottom: 3px solid #e8f9ec;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+nav a:hover {
+  color: #ff7fa5;
+  transform: translateY(-2px);
+}
+
+
+.form-card {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  width: 300px;
+
+  border: 1px solid #ffeaf2;
+  box-shadow: 
+    0 10px 25px rgba(0,0,0,0.05),
+    0 4px 10px rgba(255,150,180,0.1);
+}
+
+.form-card h2 {
+  text-align: center;
+}
+
+/* Inputs */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+input, textarea {
+  margin-top: 5px;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #ffdce8;
+  font-family: inherit;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}
+
+button {
+  margin-top: 15px;
+  background: linear-gradient(135deg,#ffb6cc,#ffdce8);
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.25s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg,#ffa3c2,#ffdce8);
+}
+
+
+footer {
+  background: linear-gradient(135deg,#ffdce8,#d8f5dc);
+  padding: 20px;
+  text-align: center;
+}
